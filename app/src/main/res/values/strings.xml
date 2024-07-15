@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Note Application</string>
     <string name="main_activity_test_content">Main Activity</string>
+    <string name="login_activity">Login Activity!</string>
 </resources>
