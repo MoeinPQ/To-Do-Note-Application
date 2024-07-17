@@ -21,9 +21,8 @@ class MyAdapter(private val context : Context, private val listNameNumber : Muta
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.binding.textView.text = listNameNumber[position].numberList.toString()
+        holder.binding.textView.text = listNameNumber[position].numberList
         holder.binding.textView2.text = listNameNumber[position].nameList
-        holder.binding.textView3.text = listNameNumber[position].nameList2
 //        holder.binding.deleteButton.setOnClickListener {
 //            listNameNumber.removeAt(position)
 //            notifyDataSetChanged()

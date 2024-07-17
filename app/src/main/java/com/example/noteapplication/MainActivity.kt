@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val nameNumberList = mutableListOf<DataClass>()
-        nameNumberList.add(DataClass(1, "a", "w"))
-        nameNumberList.add(DataClass(2, "b", "x"))
-        nameNumberList.add(DataClass(3, "c", "y"))
-        nameNumberList.add(DataClass(4, "d", "z"))
+        nameNumberList.add(DataClass("عنوان یادداشت ۱", "توضیحات"))
+        nameNumberList.add(DataClass("عنوان یادداشت ۲", "توضیحات"))
+        nameNumberList.add(DataClass("عنوان یادداشت ۳", "توضیحات"))
+        nameNumberList.add(DataClass("عنوان یادداشت ۴", "توضیحات"))
         binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
 //        binding.recyclerView.layoutManager = GridLayoutManager
         val adapter = MyAdapter(this, nameNumberList)
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         var i = 4
         binding.addButton.setOnClickListener {
-            nameNumberList.add(DataClass(i, "i", "A"))
+            nameNumberList.add(DataClass(i.toString() + "عنوان یادداشت", "توضیحات"))
             i++
             adapter.notifyDataSetChanged() // this line report our list changes to adapter.
         }

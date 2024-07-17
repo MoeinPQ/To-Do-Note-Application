@@ -7,4 +7,6 @@
     <string name="enter_button">ثبت نام</string>
     <string name="note_lines_login_image">Note lines</string>
     <string name="login_toast_message">لطفا تمامی مقادیر را پر کنید</string>
+    <string name="note_title_recycler_layout">عنوان یادداشت</string>
+    <string name="note_explain_recycler_layout">توضیحات</string>
 </resources>

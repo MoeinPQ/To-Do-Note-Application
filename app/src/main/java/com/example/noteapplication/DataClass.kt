@@ -1,4 +1,4 @@
 package com.example.noteapplication
 
-data class DataClass(var numberList : Int , var nameList : String , val nameList2 : String) {
+data class DataClass(var numberList : String , var nameList : String) {
 }
