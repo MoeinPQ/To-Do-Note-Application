@@ -1,5 +1,6 @@
 package com.example.noteapplication.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,9 +26,11 @@ class MainActivity : AppCompatActivity() {
 
         var i = 4
         binding.addButton.setOnClickListener {
-            nameNumberList.add(DataClass(i.toString() + "عنوان یادداشت", "توضیحات"))
-            i++
-            adapter.notifyDataSetChanged() // this line report our list changes to adapter.
+            val intent = Intent(this , AddNotesActivity::class.java)
+            startActivity(intent)
+//            nameNumberList.add(DataClass(i.toString() + "عنوان یادداشت", "توضیحات"))
+//            i++
+//            adapter.notifyDataSetChanged() // this line report our list changes to adapter.
         }
 
     }
