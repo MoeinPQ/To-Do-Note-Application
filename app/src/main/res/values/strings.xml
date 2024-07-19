@@ -9,4 +9,8 @@
     <string name="login_toast_message">لطفا تمامی مقادیر را پر کنید</string>
     <string name="note_title_recycler_layout">عنوان یادداشت</string>
     <string name="note_explain_recycler_layout">توضیحات</string>
+    <string name="title_add_note">عنوان یادداشت</string>
+    <string name="explain_add_note">شرح یادداشت</string>
+    <string name="add_notes_text_view">یادداشت جدید</string>
+    <string name="save_add_notes_button">ذخیره</string>
 </resources>
