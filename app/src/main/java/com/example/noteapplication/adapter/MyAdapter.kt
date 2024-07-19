@@ -1,12 +1,13 @@
-package com.example.noteapplication
+package com.example.noteapplication.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.noteapplication.database.NotesData
 import com.example.noteapplication.databinding.RecyclerLayoutBinding
 
-class MyAdapter(private val context : Context, private val listNameNumber : MutableList<DataClass>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val context : Context, private val listNameNumber : MutableList<NotesData>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(val binding: RecyclerLayoutBinding) : RecyclerView.ViewHolder(binding.root){}
 
