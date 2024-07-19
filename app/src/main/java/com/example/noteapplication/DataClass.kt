@@ -1,4 +1,4 @@
 package com.example.noteapplication
 
-data class DataClass(var numberList : String , var nameList : String) {
+data class DataClass(var title : String, var description : String) {
 }
