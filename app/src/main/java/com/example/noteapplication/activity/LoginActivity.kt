@@ -1,11 +1,11 @@
-package com.example.noteapplication
+package com.example.noteapplication.activity
 
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Toast
+import com.example.noteapplication.R
 import com.example.noteapplication.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
