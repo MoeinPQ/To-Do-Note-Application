@@ -1,5 +1,6 @@
 package com.example.noteapplication.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.noteapplication.R
@@ -23,6 +24,8 @@ class AddNotesActivity : AppCompatActivity() {
             val des = binding.desEditText.text.toString()
             val notesData = NotesData(title = title, description = des)
             notesDao.insertNotes(notesData)
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }
