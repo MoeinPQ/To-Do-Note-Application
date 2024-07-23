@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "notes")
 data class NotesData(
 
-    @PrimaryKey
-    val id : Int,
+    @PrimaryKey(autoGenerate = true)
+    val id : Int = 0,
     @ColumnInfo(name = "title")
     val title : String,
     @ColumnInfo(name = "description")

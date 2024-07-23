@@ -10,9 +10,12 @@ import androidx.room.RoomDatabase
 abstract class NotesDatabase() : RoomDatabase() {
     abstract fun getNotesDao() : NotesDao
 
-    fun buildDatabase(context : Context){
-        Room.databaseBuilder(context.applicationContext,NotesDatabase::class.java,"notes.db")
-            .allowMainThreadQueries()
-            .build()
+    companion object{
+        fun buildDatabase(context : Context) =
+            Room.databaseBuilder(context.applicationContext,NotesDatabase::class.java,"notes.db")
+                .allowMainThreadQueries()
+                .build()
     }
+
+
 }

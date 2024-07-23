@@ -15,14 +15,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val nameNumberList = mutableListOf<NotesData>()
-        nameNumberList.add(NotesData("عنوان یادداشت ۱", "توضیحات"))
-        nameNumberList.add(NotesData("عنوان یادداشت ۲", "توضیحات"))
-        nameNumberList.add(NotesData("عنوان یادداشت ۳", "توضیحات"))
-        nameNumberList.add(NotesData("عنوان یادداشت ۴", "توضیحات"))
-        binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
-//        binding.recyclerView.layoutManager = GridLayoutManager
-        val adapter = MyAdapter(this, nameNumberList)
-        binding.recyclerView.adapter = adapter
+//        nameNumberList.add(NotesData("عنوان یادداشت ۱", "توضیحات"))
+//        nameNumberList.add(NotesData("عنوان یادداشت ۲", "توضیحات"))
+//        nameNumberList.add(NotesData("عنوان یادداشت ۳", "توضیحات"))
+//        nameNumberList.add(NotesData("عنوان یادداشت ۴", "توضیحات"))
+//        binding.recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
+////        binding.recyclerView.layoutManager = GridLayoutManager
+//        val adapter = MyAdapter(this, nameNumberList)
+//        binding.recyclerView.adapter = adapter
 
         var i = 4
         binding.addButton.setOnClickListener {
