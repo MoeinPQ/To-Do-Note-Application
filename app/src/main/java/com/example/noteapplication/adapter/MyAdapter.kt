@@ -1,9 +1,12 @@
 package com.example.noteapplication.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.noteapplication.activity.AddNotesActivity
 import com.example.noteapplication.database.NotesData
 import com.example.noteapplication.databinding.RecyclerLayoutBinding
 
@@ -24,6 +27,12 @@ class MyAdapter(private val context : Context, private val listNameNumber : Muta
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.binding.titleTextViw.text = listNameNumber[position].title
         holder.binding.desTextView.text = listNameNumber[position].description
+        holder.binding.constraintRecycler.setOnClickListener{
+            val intent = Intent(context,AddNotesActivity::class.java)
+            intent.putExtra("showActivity" , true)
+            intent.putExtra("position" , position)
+            context.startActivity(intent)
+        }
     }
 
 }
