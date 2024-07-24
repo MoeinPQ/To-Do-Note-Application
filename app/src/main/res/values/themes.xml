@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.NoteApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="android:statusBarColor">#B6A799</item>
     </style>
 
     <style name="Theme.NoteApplication" parent="Base.Theme.NoteApplication" />
